@@ -1,0 +1,42 @@
+{
+  "name": "payment-system-api",
+  "version": "1.0.0",
+  "description": "API para sistema de pagos",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --verbose",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.js",
+    "build": "echo \"No build step required for Node.js app\" && exit 0",
+    "deploy": "echo \"Deployment script would be executed here\" && exit 0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.16.0",
+    "mongoose": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "mongodb-memory-server": "^10.1.4",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
