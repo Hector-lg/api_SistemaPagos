@@ -1,5 +1,4 @@
-const e = require('express');
-const { create } = require('../repositories/userRepository');
+
 const transactionService = require('../services/transactionService');
 
 /**

@@ -66,10 +66,10 @@ const transactionService = {
     async getUserTransactions(userId, options) {
     const user = await userRepository.findById(userId);
     if (!user) {
-      const error = new Error('Usuario no encontrado');
-      error.status = 404;
-      throw error;
-    }
+    const error = new Error('Usuario no encontrado');
+    error.status = 404;
+    throw error;
+}
     
     return await transactionRepository.findByUserId(userId, options);
     },

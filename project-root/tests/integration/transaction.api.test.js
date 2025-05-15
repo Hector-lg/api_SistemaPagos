@@ -13,7 +13,7 @@ let transactionId;
 
 // Conectar a la base de datos antes de las pruebas
 beforeAll(async () => {
-  const MONGODB_URI = process.env.MONGODB_TEST_URI || 'mongodb://localhost:27017/payment_system_test';
+  const MONGODB_URI = process.env.MONGODB_TEST_URI || 'mongodb+srv://[tu_usuario]:[tu_contraseña]@[tu-cluster].mongodb.net/payment_system_test?retryWrites=true&w=majority';
   await mongoose.connect(MONGODB_URI);
 
   // Crear un usuario de prueba
